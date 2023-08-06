@@ -1,0 +1,41 @@
+/* HEADER */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 3rem;
+  box-shadow: 0 1px 0 0 rgba(26, 41, 58, 0.2);
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.nav-bar img {
+  width: 100px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-icons-container {
+  display: flex;
+  gap: 1rem;
+  color: #222;
+}
+
+.nav-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+}

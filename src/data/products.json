@@ -1,0 +1,48 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+      "title": "Nike Air Monarch IV",
+      "description": "Running shoes",
+      "reviews": "(123 reviews)",
+      "rating": 5,
+      "prevPrice": 70,
+      "newPrice": 10,
+      "company": "Nike"
+    },
+    {
+      "id": 2,
+      "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+      "title": "Adidas Air Monarch IV",
+      "description": "Running shoes",
+      "reviews": "(123 reviews)",
+      "rating": 4,
+      "prevPrice": 140,
+      "newPrice": 100,
+      "company": "Adidas"
+    },
+    {
+      "id": 3,
+      "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+      "title": "Puma Air Monarch IV",
+      "description": "Running shoes",
+      "reviews": "(123 reviews)",
+      "rating": 2,
+      "prevPrice": 200,
+      "newPrice": 180,
+      "company": "Puma"
+    },
+    {
+      "id": 4,
+      "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+      "title": "Adidas Air Monarch IV",
+      "description": "Running shoes",
+      "reviews": "(123 reviews)",
+      "rating": 2,
+      "prevPrice": 85,
+      "newPrice": 45,
+      "company": "Adidas"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+/* SIDEBAR */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  padding: 2rem 0 0 2rem;
+  border-right: 1px solid rgba(26, 41, 58, 0.2);
+}
+
+.filter-title {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.price-title {
+  margin-top: 0;
+}
+
+.sidebar-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.sidebar-label:hover input ~ .check {
+  background-color: #ccc;
+}
+
+.sidebar-label input:checked ~ .check {
+  background-color: #2196f3;
+}
+
+.check:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.sidebar-label-container input:checked ~ .check:after {
+  display: block;
+}
+
+.sidebar-label-container .check:after {
+  top: 6.4px;
+  left: 6.4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 12%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 20%;
+  }
+}
