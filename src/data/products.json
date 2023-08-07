@@ -3,9 +3,9 @@
     {
       "id": 1,
       "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
-      "title": "Nike Air Monarch IV",
+      "title": "Nike Air Max 270",
       "description": "Running shoes",
-      "reviews": "(123 reviews)",
+      "reviews": "(132 reviews)",
       "rating": 5,
       "prevPrice": 70,
       "newPrice": 10,
@@ -14,9 +14,9 @@
     {
       "id": 2,
       "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
-      "title": "Adidas Air Monarch IV",
+      "title": "Adidas Originals 100",
       "description": "Running shoes",
-      "reviews": "(123 reviews)",
+      "reviews": "(150 reviews)",
       "rating": 4,
       "prevPrice": 140,
       "newPrice": 100,
@@ -25,24 +25,115 @@
     {
       "id": 3,
       "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
-      "title": "Puma Air Monarch IV",
+      "title": "Puma Cell Rapid 12",
       "description": "Running shoes",
-      "reviews": "(123 reviews)",
-      "rating": 2,
+      "reviews": "(77 reviews)",
+      "rating": 3,
       "prevPrice": 200,
       "newPrice": 180,
       "company": "Puma"
     },
+
     {
       "id": 4,
       "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
-      "title": "Adidas Air Monarch IV",
+      "title": "Puma Caven Block Jr 2",
+      "description": "Running shoes",
+      "reviews": "(30 reviews)",
+      "rating": 1,
+      "prevPrice": 109,
+      "newPrice": 54,
+      "company": "Puma"
+    },
+    {
+      "id": 5,
+      "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+      "title": "Nike Air Jordan",
       "description": "Running shoes",
       "reviews": "(123 reviews)",
       "rating": 2,
       "prevPrice": 85,
       "newPrice": 45,
+      "company": "Nike"
+    },
+    {
+      "id": 6,
+      "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+      "title": "Adidas Lite Racer",
+      "description": "Running shoes",
+      "reviews": "(170 reviews)",
+      "rating": 5,
+      "prevPrice": 200,
+      "newPrice": 179,
+      "company": "Adidas"
+    },
+    {
+      "id": 7,
+      "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+      "title": "Nike Air Max 770",
+      "description": "Running shoes",
+      "reviews": "(132 reviews)",
+      "rating": 5,
+      "prevPrice": 70,
+      "newPrice": 10,
+      "company": "Nike"
+    },
+    {
+      "id": 8,
+      "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+      "title": "Adidas Originals 200",
+      "description": "Running shoes",
+      "reviews": "(150 reviews)",
+      "rating": 4,
+      "prevPrice": 100,
+      "newPrice": 50,
+      "company": "Adidas"
+    },
+    {
+      "id": 9,
+      "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+      "title": "Puma Cell Rapid 22",
+      "description": "Running shoes",
+      "reviews": "(77 reviews)",
+      "rating": 2,
+      "prevPrice": 250,
+      "newPrice": 222,
+      "company": "Puma"
+    },
+
+    {
+      "id": 10,
+      "img": "https://m.media-amazon.com/images/I/51+P9uAvb1L._AC_UY695_.jpg",
+      "title": "Puma Caven Block Jr 3",
+      "description": "Running shoes",
+      "reviews": "(37 reviews)",
+      "rating": 4,
+      "prevPrice": 111,
+      "newPrice": 99,
+      "company": "Puma"
+    },
+    {
+      "id": 11,
+      "img": "https://m.media-amazon.com/images/I/6125yAfsJKL._AC_UX575_.jpg",
+      "title": "Nike Air Jordan 11",
+      "description": "Running shoes",
+      "reviews": "(123 reviews)",
+      "rating": 2,
+      "prevPrice": 300,
+      "newPrice": 289,
+      "company": "Nike"
+    },
+    {
+      "id": 12,
+      "img": "https://m.media-amazon.com/images/I/519MRhRKGFL._AC_UX575_.jpg",
+      "title": "Adidas Lite Racer 12",
+      "description": "Running shoes",
+      "reviews": "(170 reviews)",
+      "rating": 5,
+      "prevPrice": 200,
+      "newPrice": 149,
       "company": "Adidas"
     }
+
   ]
 }

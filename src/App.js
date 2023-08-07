@@ -1,4 +1,5 @@
-import { useEffect, useState, useReducer } from 'react';
+import { useState } from 'react';
+import { useProduct } from './contexts/ProductContext';
 
 import NavBar from './components/Header/Navbar';
 import Main from './components/Main/Main';
@@ -9,42 +10,22 @@ import Loader from './components/Loader';
 import Error from './components/Error';
 import CategoryName from './components/Main/CategoryName';
 
-const initialState = {
-  products: [],
-  status: 'loading', // 'loading', 'error', 'ready'
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case 'dataReceived':
-      return {
-        ...state,
-        products: action.payload,
-        status: 'ready',
-      };
-    case 'dataFailed':
-      return {
-        ...state,
-        status: 'error',
-      };
-    default:
-      throw new Error('Unknown Action');
-  }
-}
-
 export default function App() {
-  const [{ products, status }, dispatch] = useReducer(reducer, initialState);
+  const { status, products } = useProduct();
+
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState(null);
   const [selectedRating, setSelectedRating] = useState(null);
   const [sortingOption, setSortingOption] = useState('a-z'); // Default sorting option
 
-  useEffect(function () {
-    fetch('http://localhost:8000/products')
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: 'dataReceived', payload: data }))
-      .catch((err) => dispatch({ type: 'dataFailed' }));
-  }, []);
+  const productsPerPage = 6;
+  const [displayedProducts, setDisplayedProducts] = useState(productsPerPage);
+
+  const loadMoreProducts = () => {
+    setDisplayedProducts(
+      (prevDisplayedProducts) => prevDisplayedProducts + productsPerPage
+    );
+  };
 
   function handleChangeCategory(e) {
     setSelectedCategory(e.target.value);
@@ -161,10 +142,18 @@ export default function App() {
             />
 
             <div className="product-container">
-              {filteredAndSortedProducts.map((product) => (
-                <Product key={product.id} product={product} />
-              ))}
+              {filteredAndSortedProducts
+                .slice(0, displayedProducts)
+                .map((product) => (
+                  <Product key={product.id} product={product} />
+                ))}
             </div>
+
+            {displayedProducts < numProducts && (
+              <button className="load-more-btn" onClick={loadMoreProducts}>
+                Load More
+              </button>
+            )}
           </>
         )}
       </Main>

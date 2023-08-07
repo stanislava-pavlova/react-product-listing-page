@@ -2,7 +2,7 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className='footer'>
+    <footer className="footer">
       <div className="row links">
         <ul>
           <li>
@@ -23,7 +23,9 @@ export default function Footer() {
         </ul>
       </div>
 
-      <div className="row italic">FitFusion Footwear © 2023 - All rights reserved</div>
+      <div className="row italic">
+        FitFusion Footwear © {new Date().getFullYear()} - All rights reserved
+      </div>
     </footer>
   );
 }

@@ -1,8 +1,9 @@
 import Button from './Button';
 
-export default function NavbarLinks({ onSelectCategory }) {
+export default function NavbarLinks({ onSelectCategory, isOpen }) {
   return (
-    <div className="products-nav">
+    // <div className="products-nav">
+    <div  className={`products-nav ${isOpen ? 'open' : ''}`}>
       <Button
         onSelectCategory={onSelectCategory}
         value=""

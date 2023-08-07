@@ -7,22 +7,12 @@
   outline: 0;
   list-style: none;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 
 body {
   font-family: 'Noto Serif Vithkuqi', san-serif;
-
   color: #222;
-}
-
-.buttons {
-  padding: 10px 20px;
-  margin-right: 6px;
-  background-color: transparent;
-  border: 0.6px solid #ccc;
-  border-radius: 5px;
-  color: #222;
-  cursor: pointer;
 }
 
 .error,
@@ -65,5 +55,3 @@ body {
     background-position: 0% 50%, 50% 50%, 100% 100%;
   }
 }
-
-/* ******* */
