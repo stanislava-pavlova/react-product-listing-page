@@ -22,7 +22,7 @@ You may also see any lint errors in the console.
 
 ### `npm run server`
 
-Runs the products API
+Runs the products API.\
 Open [http://localhost:8000/products](http://localhost:8000/products) to view it in your browser.
 
 
